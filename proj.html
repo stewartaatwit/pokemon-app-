@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="proj.css">
+
+    <script src="proj.js">
+    </script>
+</head>
+
+<body>
+    <title> Pokemon!</title>
+    <div class="heading-section">
+   <h1>Pokemon Card Info!</h1>
+    <h8>Click on one and learn about different pokemons</h8>
+
+
+    </div>
+
+    <div class = "body-section">
+        <table>
+            <thead>
+               <th>Pokemons!
+               </th> 
+            </thead>
+            
+            <tbody id="pokemonContainer">
+                <tr id="pokemonRow">
+                    <td id = "pokemonCell">
+                      <!-- main container to control Card-->
+                    <!--ontouchstart works for touch screen-->
+                        <div class = "container-flip" ontouchstart = "this.classList.toggle('hover');">
+                            <div class="flipout">
+                                <div class=" fronter">
+                                    <img>
+                                </div>
+                                <div class="backer"">
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                  
+
+
+
+
+
+                </tr>
+                
+            </tbody>
+
+
+        </table>
+    </div>
+ 
+
+</body>
+</html>
