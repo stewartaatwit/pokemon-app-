@@ -1,1 +1,36 @@
 
+.container-flip{
+    perspective: 1000px;
+    color:pink
+}
+
+.container-flip:hover .flipout, .container-flip.hover .flipout{
+    transform:rotateX(180deg);
+}
+
+.container-flip, .fronter, .backer{
+    width: 200px;
+    height: 200px;
+}
+
+.flipout{
+    transition: 0.5s;
+    transform-style : preserve-3d;
+    position:relative;
+}
+
+.fronter, .backer{
+    backface-visibility: hidden;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.fronter {
+ z-index: 2;
+ transform: rotateX(0deg);
+}
+
+.backer{
+    transform: rotateX(0deg)
+}
