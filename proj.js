@@ -24,6 +24,8 @@ function createPokemonCard(pokemon){
             <p class= "height"> Height: ${pokemon.height}</p>
              <p class= "weight"> Weight: ${pokemon.weight}</p>
             <div class="gameIndices"> Game Index:
+            
+            
              </div>
 
 

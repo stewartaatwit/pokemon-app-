@@ -1,19 +1,21 @@
 
 .container-flip{
     perspective: 1000px;
-    color:pink
+    color:black;
 }
 
 .container-flip:hover .flipout, .container-flip.hover .flipout{
-    transform:rotateX(180deg);
+    transform:rotateY(180deg);
 }
 
 .container-flip, .fronter, .backer{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 }
 
 .flipout{
+    width:100%;
+    height:100%;
     transition: 0.5s;
     transform-style : preserve-3d;
     position:relative;
@@ -22,15 +24,201 @@
 .fronter, .backer{
     backface-visibility: hidden;
     position: absolute;
+    width:100%;
+    height:100%;
     top:0;
     left:0;
+    border-radius: 10px;
+    border: 2px solid black;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+    padding:10px;
 }
 
-.fronter {
- z-index: 2;
- transform: rotateX(0deg);
+.fronter img {
+ width:100px;
+ height:100px;
 }
 
 .backer{
-    transform: rotateX(0deg)
+    transform: rotateY(180deg);
+    text-align:center;
+    font-size: 10px;
 }
+#pokemonContainer{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+    justify-items: center;
+    padding :25px;
+}
+
+.gameIndices span{
+    margin: 2px;
+    padding : 2px 5px;
+    border-radius: 4px;
+    font-size: 11px;
+
+
+
+}
+
+.gameIndices{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5px;
+}
+.version-red{
+    background-color: #FF0000;
+    color: white;
+}
+.version-blue{
+    background-color: #0000FF;
+    color: white;
+}
+.version-yellow{
+    background-color: #FFFF00;
+    color: black;
+}
+
+.version-gold{
+    background-color: #D4AF37;
+    color: black;
+}
+.version-silver{
+    background-color: #C0C0C0;
+    color: black;
+}
+.version-crystal{
+    background-color: #4FD9FF;
+    color: black;
+}
+.version-ruby{
+    background-color: #A00000;
+    color: white;
+}
+.version-sapphire{
+    background-color: #0000A0;
+    color: white;
+}
+.version-emerald{
+    background-color: #00A000;
+    color: black;
+}
+.version-fire-red{
+    background-color: #FF4500;
+    color: white;
+}
+.version-leaf-green{
+    background-color: #32CD32;
+    color: white;
+}
+.version-diamond{
+    background-color: #AAA9AD;
+    color: black;
+}
+.version-pearl{
+    background-color: #EEACC1;
+    color: black;
+}
+
+.version-platinum{
+    background-color: #999999;
+    color: black;
+}
+.version-heartgold{
+    background-color: #FFB800;
+    color: black;
+}
+.version-soulsilver{
+    background-color: #C0C0C0;
+    color: black;
+}
+.version-black{
+    background-color: #000000;
+    color: white;
+}
+.version-white{
+    background-color: #FFFFFF;
+    color: black;
+}
+.version-black-2{
+    background-color: #000000;
+    color: white;
+}
+.version-white-2{
+    background-color: #FFFFFF;
+    color: black;
+}
+.version-x{
+    background-color: #0055AF;
+    color: white;
+}
+.version-y{
+    background-color: #ED1C24;
+    color: white;
+}
+.version-omega-ruby{
+    background-color: #E0115F;
+    color: white;
+}
+.version-alpha-sapphire{
+    background-color: #0F52BA;
+    color: white;
+}
+.version-sun{
+    background-color: #F99911;
+    color: black;
+}
+.version-moon{
+    background-color: #1D2C5E;
+    color: white;
+}
+.version-ultra-sun{
+    background-color: #FFDD00;
+    color: black;
+}
+.version-ultra-moon{
+    background-color: #708090;
+    color: white;
+}
+.version-sword{
+    background-color: #00A1E9;
+    color: black;
+}
+.version-shield{
+    background-color: #E5005A;
+    color: white;
+}
+.version-brilliant-diamond{
+    background-color: #B9F2FF;
+    color: black;
+}
+.version-shining-pearl{
+    background-color: #E7FEFF;
+    color: black;
+}
+.version-legendary-heart{
+    background-color: #FF0000;
+    color: white;
+}
+.version-arceus{
+    background-color: #F8F8FF;
+    color: black;
+}
+.version-scarlet{
+    background-color: #FF0000;
+    color: white;
+}
+.version-violet{
+    background-color: #8A2BE2;
+    color: white;
+}
+
+
+
+
