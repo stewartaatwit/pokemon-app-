@@ -47,6 +47,21 @@
     transform: rotateY(180deg);
     text-align:center;
     font-size: 10px;
+
+}
+.backer .grid_info .abilities{
+    display: grid;
+    grid-template-columns: 5fr 5fr 5fr;
+    gap: 1x;
+    justify-items: center;
+}
+span{
+    padding: 6px;
+    margin:10px;
+    border: 1px solid white;
+    background-color:white;
+    border-radius:50%;
+
 }
 #pokemonContainer{
     display:grid;
@@ -217,6 +232,22 @@
 .version-violet{
     background-color: #8A2BE2;
     color: white;
+}
+#inputSearch{
+    width: 500px;
+
+    padding: 6px;
+    margin-top: 10px;
+    border: 2px solid gray;
+    border-radius: 2px;
+}
+
+#inputSearch:hover{
+    border: 2px solid black
+}
+
+.hidden{
+    display:none;
 }
 
 
