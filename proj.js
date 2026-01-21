@@ -68,7 +68,13 @@ function searchPokemon(evt){
 
 
 async function iChooseYou(){
+    const container = document.getElementsByClassName("container-flip")[0];
+    if(container){
+        container.remove();
+    }
 for(let i =1;i <= 151; i++){
+   
+            
 const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`);
 const pokemonAnimal = await response.json();
 createPokemonCard(pokemonAnimal);
