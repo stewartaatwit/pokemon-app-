@@ -9,15 +9,17 @@
 
 </head>
 
-<body>
+<body class="background">
     <title> Pokemon!</title>
     <div class="heading-section">
    <h1>Pokemon Card Info!</h1>
+    <h8>Click on one and learn about different pokemons</h8>
 <div class = "topnav">
     <!--<a> tag is hyperlink tag-->
 
         <!--search bar-->
         <input type ="text" placeholder="Search Pokemon" id="inputSearch" onkeyup="searchPokemon(event)"> 
+
 
     </div>
 
@@ -28,7 +30,6 @@
                         <div class = "container-flip" ontouchstart = "this.classList.toggle('hover');">
                             <div class="flipout">
                                 <div class=" fronter">
-                                  <h3 class="pokemon-name"></h3>
                                     <img>
                                 </div>
                             

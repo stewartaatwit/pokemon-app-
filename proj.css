@@ -4,6 +4,11 @@
     color:black;
 }
 
+.background{
+    background-image: url(https://i.pinimg.com/736x/05/b7/56/05b756670828a617bd5e69820ad83523.jpg);
+}
+
+
 .container-flip:hover .flipout, .container-flip.hover .flipout{
     transform:rotateY(180deg);
 }
@@ -47,21 +52,6 @@
     transform: rotateY(180deg);
     text-align:center;
     font-size: 10px;
-
-}
-.backer .grid_info .abilities{
-    display: grid;
-    grid-template-columns: 5fr 5fr 5fr;
-    gap: 1x;
-    justify-items: center;
-}
-span{
-    padding: 6px;
-    margin:10px;
-    border: 1px solid white;
-    background-color:white;
-    border-radius:50%;
-
 }
 #pokemonContainer{
     display:grid;
@@ -233,6 +223,7 @@ span{
     background-color: #8A2BE2;
     color: white;
 }
+
 #inputSearch{
     width: 500px;
 
@@ -246,9 +237,6 @@ span{
     border: 2px solid black
 }
 
-.hidden{
-    display:none;
-}
 
 
 
