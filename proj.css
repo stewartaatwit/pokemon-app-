@@ -8,6 +8,22 @@
     background-image: url(https://i.pinimg.com/736x/05/b7/56/05b756670828a617bd5e69820ad83523.jpg);
 }
 
+.glitter_gif{
+    display: flex;
+    justify-content:space-evenly;
+    width:100%;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title{
+    display:flex;
+    padding:0, 100pxo, 0, 10;
+    margin-left: auto;
+    justify-content: center;
+    font-family: 'Times New Roman', 'Times New Roman', Times, serif, serif;
+}
 
 .container-flip:hover .flipout, .container-flip.hover .flipout{
     transform:rotateY(180deg);
@@ -50,179 +66,30 @@
 
 .backer{
     transform: rotateY(180deg);
-    text-align:center;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto auto;
+    gap:1rem;
+    padding : 1rem;
+    text-align:left;
     font-size: 10px;
 }
 #pokemonContainer{
     display:grid;
-    grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: auto auto auto auto;
     gap: 50px;
     justify-items: center;
     padding :25px;
 }
 
-.gameIndices span{
-    margin: 2px;
-    padding : 2px 5px;
-    border-radius: 4px;
-    font-size: 11px;
-
-
-
+.grid-child{
+    background-color: rgb(238, 163, 177);
+    border-radius :10px;
+    padding: 0.25rem;
+    font-size:0.75rem;
+    outline: 1.5px solid black;
 }
 
-.gameIndices{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 5px;
-}
-.version-red{
-    background-color: #FF0000;
-    color: white;
-}
-.version-blue{
-    background-color: #0000FF;
-    color: white;
-}
-.version-yellow{
-    background-color: #FFFF00;
-    color: black;
-}
-
-.version-gold{
-    background-color: #D4AF37;
-    color: black;
-}
-.version-silver{
-    background-color: #C0C0C0;
-    color: black;
-}
-.version-crystal{
-    background-color: #4FD9FF;
-    color: black;
-}
-.version-ruby{
-    background-color: #A00000;
-    color: white;
-}
-.version-sapphire{
-    background-color: #0000A0;
-    color: white;
-}
-.version-emerald{
-    background-color: #00A000;
-    color: black;
-}
-.version-fire-red{
-    background-color: #FF4500;
-    color: white;
-}
-.version-leaf-green{
-    background-color: #32CD32;
-    color: white;
-}
-.version-diamond{
-    background-color: #AAA9AD;
-    color: black;
-}
-.version-pearl{
-    background-color: #EEACC1;
-    color: black;
-}
-
-.version-platinum{
-    background-color: #999999;
-    color: black;
-}
-.version-heartgold{
-    background-color: #FFB800;
-    color: black;
-}
-.version-soulsilver{
-    background-color: #C0C0C0;
-    color: black;
-}
-.version-black{
-    background-color: #000000;
-    color: white;
-}
-.version-white{
-    background-color: #FFFFFF;
-    color: black;
-}
-.version-black-2{
-    background-color: #000000;
-    color: white;
-}
-.version-white-2{
-    background-color: #FFFFFF;
-    color: black;
-}
-.version-x{
-    background-color: #0055AF;
-    color: white;
-}
-.version-y{
-    background-color: #ED1C24;
-    color: white;
-}
-.version-omega-ruby{
-    background-color: #E0115F;
-    color: white;
-}
-.version-alpha-sapphire{
-    background-color: #0F52BA;
-    color: white;
-}
-.version-sun{
-    background-color: #F99911;
-    color: black;
-}
-.version-moon{
-    background-color: #1D2C5E;
-    color: white;
-}
-.version-ultra-sun{
-    background-color: #FFDD00;
-    color: black;
-}
-.version-ultra-moon{
-    background-color: #708090;
-    color: white;
-}
-.version-sword{
-    background-color: #00A1E9;
-    color: black;
-}
-.version-shield{
-    background-color: #E5005A;
-    color: white;
-}
-.version-brilliant-diamond{
-    background-color: #B9F2FF;
-    color: black;
-}
-.version-shining-pearl{
-    background-color: #E7FEFF;
-    color: black;
-}
-.version-legendary-heart{
-    background-color: #FF0000;
-    color: white;
-}
-.version-arceus{
-    background-color: #F8F8FF;
-    color: black;
-}
-.version-scarlet{
-    background-color: #FF0000;
-    color: white;
-}
-.version-violet{
-    background-color: #8A2BE2;
-    color: white;
-}
 
 #inputSearch{
     width: 500px;

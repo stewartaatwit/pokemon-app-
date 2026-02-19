@@ -12,49 +12,48 @@ function createPokemonCard(pokemon){
     pokedexCard.innerHTML= `
          <div class="flipout">
             <div class="fronter">
+                                       
             <h3>${pokemon.name.toUpperCase()}</h3>
                 <img src ="${pokemon.sprites.front_default}">
                 </div>
-            <div class="backer">
-           <h3>
-                Get to know me!
-            </h3>
-            <p class= "type"> Type(s): ${pokemon.types.map(temp =>  temp.type.name).join(", ")}</p>
+        <div class="backer">
+          
+            <div class= "grid-child">
+            <p class= "type"> 
+            <h2>Type(s)</h2>
+            Type(s): ${pokemon.types.map(temp =>  temp.type.name).join(", ")}
+            </p>
+             <p> 
+             Ability/Abilities: ${pokemon.abilities.map(tempAb => tempAb.ability.name).join(", ")} </p>
+            </div>
+
+            <div class= "grid-child">
+                         <h2>Physical Stats</h2>
+
             <p class= "height"> Height: ${pokemon.height}</p>
              <p class= "weight"> Weight: ${pokemon.weight}</p>
-            <div class="gameIndices"> Game Index:
-            
-            
              </div>
 
 
-            <div class= "abilities">
+            <div class= "grid-child">
+             <h2>Abilities</h2>
+
             <p>${pokemon.stats[0].stat.name.toUpperCase()}: ${pokemon.stats[0].base_stat} </p>
             <p>${pokemon.stats[1].stat.name.toUpperCase()}: ${pokemon.stats[1].base_stat} </p>
             <p>${pokemon.stats[2].stat.name.toUpperCase()}: ${pokemon.stats[2].base_stat} </p>
+           </div>
+
+           <div class= "grid-child">
+           <h2>Base Stats</h2>
             <p>${pokemon.stats[3].stat.name.toUpperCase()}: ${pokemon.stats[3].base_stat} </p>
             <p>${pokemon.stats[4].stat.name.toUpperCase()}: ${pokemon.stats[4].base_stat} </p>
             <p>${pokemon.stats[5].stat.name.toUpperCase()}: ${pokemon.stats[5].base_stat} </p>
-            <p> Ability/Abilities: ${pokemon.abilities.map(tempAb => tempAb.ability.name).join(", ")} </p>
-           
-           
-           
-           
-           
-           
-            </div>
-            
-                
-            </div>
+           </div>
+        </div>
+ 
     </div>             
                         `;
-                 const indexContainer = pokedexCard.querySelector('.gameIndices');
-                pokemon.game_indices.forEach(index => {
-                const colorText = document.createElement("span");
-                colorText.textContent = index.game_index;
-                colorText.classList.add(`version-${index.version.name}`);
-                indexContainer.appendChild(colorText);
-        });
+                
     grid.appendChild(pokedexCard);
 
 
@@ -93,6 +92,18 @@ const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`);
 const pokemonAnimal = await response.json();
 createPokemonCard(pokemonAnimal);
 }
+
+
 }
+
+function musicPlay(){
+    document.addEventListener("click", () => {
+const music= document.getElementById("bg-music");
+    music.muted = false;
+    music.play();
+    } ,{once: true});
+    
+}
+musicPlay();
 
 iChooseYou()
